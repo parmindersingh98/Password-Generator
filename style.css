@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: EEEEEE;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", serif;
+    color: #222831;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid #222831;
+    padding: 30px 100px;
+
+    box-shadow: 4px 4px #222831;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-shadow: 4px 4px 2px #2228312a;
+}
+
+input{
+    width: 70%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border: 2px solid #222831;
+    border-radius: none;
+    box-shadow: 4px 4px #222831;
+}
+
+.btn{
+    background-color: #00ADB5;
+    width: 70%;
+    padding: 10px 20px;
+    border: 2px solid #222831;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #eee;
+    box-shadow: 4px 4px #222831;
+}
+
+.btn:hover{
+    background-color: #019198;
+}
+
+.btn:active{
+    box-shadow: 1px 1px #222831;
+    transform: translateY(2px);
+}
+
+p{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 70%;
+        padding: 10px 30px;
+    }
+
+    input, .btn {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .password{
+        font-size: 15px;
+    }
+  }
