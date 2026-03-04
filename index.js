@@ -6,7 +6,7 @@ let arr =
   "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*()";
 
 btn.addEventListener("click", () => {
-  if (length.value > 0) {
+  if (length.value > 4) {
     let arr2 = "";
     for (let i = 0; i < length.value; i++) {
       let randomNumber = Math.floor(Math.random() * arr.length);
@@ -28,3 +28,4 @@ password.addEventListener("click", function () {
   navigator.clipboard.writeText(textToCopy);
   alert(`${textToCopy} is copied to clipboard.`);
 });
+
